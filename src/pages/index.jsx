@@ -1,77 +1,20 @@
 import React from "react";
-import Logo from "../assets/icons/logo.svg";
-import Avatar from "../assets/images/avatar.png";
-import { Link } from "react-router-dom";
-import { CgSearch } from "react-icons/cg";
-import { RxCaretRight, RxCaretDown } from "react-icons/rx";
-import { TbWorld } from "react-icons/tb";
-import { BiLogOut } from "react-icons/bi";
+import { RxCaretDown } from "react-icons/rx";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import CandlestickChart from "../components/chart/candlestick";
+// import CandlestickChart from "../components/chart/candlestick";
 import {
   FaLongArrowAltUp,
   FaLongArrowAltDown,
   FaRegChartBar,
 } from "react-icons/fa";
 import { Icons } from "../assets/icons/Icons";
+import Header from "../components/Header";
 
 const Index = () => {
   return (
     <>
       {/* NAV HEADER SECTION */}
-      <nav className="nav__header">
-        {/* LEFT SIDE OF THE NAVBAR */}
-        <div className="left__header">
-          {/* WEBSITE LOGO */}
-          <div className="logo">
-            <div className="logo__container">
-              <img src={Logo} alt="SisyPhus Logo" />
-            </div>
-          </div>
-          {/* HEADER NAV LINKS */}
-          <div className="nav__links--lists">
-            <ul className="nav__links">
-              <li className="nav__link active">
-                <Link to={"/"}>Dashboard</Link>
-              </li>
-              <li className="nav__link">
-                <Link to={"/"}>Markets</Link>
-              </li>
-              <li className="nav__link">
-                <Link to={"/"}>Wallet</Link>
-              </li>
-              <li className="nav__link">
-                <Link to={"/"}>Profile</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* RIGHT SIDE OF THE NAV HEADER */}
-        <div className="right__header">
-          {/* SEARCH INPUT */}
-          <div className="search__bar">
-            <div className="search__input">
-              <input type="text" placeholder="Search" />
-              <CgSearch />
-            </div>
-          </div>
-          <div className="profile">
-            {/* PROFILE AVATAR */}
-            <img src={Avatar} alt="Profile Avatar" />
-            {/* PROFILE NAME */}
-            <p className="profile__name">Bright Isaac</p>
-            <RxCaretRight />
-          </div>
-          <div className="action__icons">
-            <div className="map__lang">
-              <TbWorld />
-            </div>
-            <div className="logout">
-              <BiLogOut />
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Header />
       {/* MAIN CONTENT */}
       <main>
         {/* TOP INFO */}
@@ -128,10 +71,37 @@ const Index = () => {
           <div className="main__top--region">
             {/* CANDLESTICK CHART */}
             <div className="candlestick__chart">
-              <CandlestickChart />
+              <div className="top__time"></div>
+              {/* <CandlestickChart /> */}
             </div>
             {/* RECENT TRADES & ORDER BOOK */}
-            <div className="trading__pairs"></div>
+            <div className="trading__pairs">
+              <div className="trading__pairs--content">
+                <div className="trading__pairs--tabs">
+                  <div className="trading__pairs--tab">Order Book</div>
+                  <div className="trading__pairs--tab">Recent Trades</div>
+                </div>
+                <div className="trading__pairs--tabviews">
+                  <div className="order__book--tabview">
+                    <div className="order__book--topIcon">
+                      <div className="order__book--gridIcons">
+                        <div className="gridIcon">
+                          {Icons.orderbook_top_leftIcon}
+                        </div>
+                        <div className="gridIcon">
+                          {Icons.orderbook_top_centerIcon}
+                        </div>
+                        <div className="gridIcon">
+                          {Icons.orderbook_top_rightIcon}
+                        </div>
+                      </div>
+                      <div className="order__book--numberDropdown">10</div>
+                    </div>
+                  </div>
+                  <div className="recent__trades--tabview"></div>
+                </div>
+              </div>
+            </div>
           </div>
           {/* ORDERS TABS */}
           <div className="orders"></div>

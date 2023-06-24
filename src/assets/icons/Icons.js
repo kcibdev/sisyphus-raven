@@ -7,7 +7,7 @@ export const Icons = {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1_5690)">
+      <g clipPath="url(#clip0_1_5690)">
         <path
           d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
           fill="#F7931A"
@@ -17,15 +17,15 @@ export const Icons = {
           fill="white"
         />
       </g>
-      <g clip-path="url(#clip1_1_5690)">
+      <g clipPath="url(#clip1_1_5690)">
         <path
           d="M51.5 16C51.5 24.5604 44.5604 31.5 36 31.5C27.4396 31.5 20.5 24.5604 20.5 16C20.5 7.43959 27.4396 0.5 36 0.5C44.5604 0.5 51.5 7.43959 51.5 16Z"
           fill="#6CDE07"
           stroke="#20252B"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M43 19.154C43 21.724 40.914 23.43 37.834 23.687V26H35.724V23.664C33.6407 23.4291 31.6613 22.6289 30 21.35L31.552 19.224C32.935 20.299 34.244 21 35.821 21.234V16.654C32.28 15.766 30.631 14.481 30.631 11.841C30.631 9.318 32.692 7.589 35.724 7.355V6H37.834V7.402C39.4831 7.58518 41.0554 8.19754 42.394 9.178L41.035 11.374C39.968 10.603 38.877 10.112 37.737 9.879V14.318C41.424 15.206 43 16.631 43 19.154ZM35.82 13.827V9.715C34.293 9.832 33.493 10.65 33.493 11.678C33.493 12.658 33.953 13.29 35.821 13.828L35.82 13.827ZM40.138 19.317C40.138 18.267 39.628 17.636 37.737 17.098V21.328C39.265 21.21 40.138 20.439 40.138 19.318V19.317Z"
           fill="white"
         />
@@ -38,6 +38,45 @@ export const Icons = {
           <rect width="32" height="32" fill="white" transform="translate(20)" />
         </clipPath>
       </defs>
+    </svg>
+  ),
+  orderbook_top_leftIcon: (
+    <svg
+      width="12"
+      height="10"
+      viewBox="0 0 12 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="12" height="2" rx="1" fill="#FF6838" />
+      <rect y="4" width="12" height="2" rx="1" fill="#B1B5C4" />
+      <rect y="8" width="12" height="2" rx="1" fill="#25C26E" />
+    </svg>
+  ),
+  orderbook_top_centerIcon: (
+    <svg
+      width="12"
+      height="10"
+      viewBox="0 0 12 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="12" height="2" rx="1" fill="#B1B5C4" />
+      <rect y="4" width="12" height="2" rx="1" fill="#B1B5C4" />
+      <rect y="8" width="12" height="2" rx="1" fill="#25C26E" />
+    </svg>
+  ),
+  orderbook_top_rightIcon: (
+    <svg
+      width="12"
+      height="10"
+      viewBox="0 0 12 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="12" height="2" rx="1" fill="#FF6838" />
+      <rect y="4" width="12" height="2" rx="1" fill="#B1B5C4" />
+      <rect y="8" width="12" height="2" rx="1" fill="#B1B5C4" />
     </svg>
   ),
 };
