@@ -23,19 +23,19 @@ const Index = () => {
       <main>
         {/* TOP INFO */}
         <div className="top__info">
-          <DropdownMenu
-            trigger={
-              <div className="coins right__border">
+          <div className="coins right__border">
+            <DropdownMenu
+              trigger={
                 <div className="coins__dropdown">
                   {Icons.coins__logo} <h2 className="coin__name">BTC/USDT</h2>{" "}
                   <RxCaretDown />
                 </div>
-                <div className="coin__change">$20,634</div>
-              </div>
-            }
-          >
-            <SelectMarket />
-          </DropdownMenu>
+              }
+            >
+              <SelectMarket />
+            </DropdownMenu>
+            <div className="coin__change">$20,634</div>
+          </div>
 
           <div className="change">
             <Change
