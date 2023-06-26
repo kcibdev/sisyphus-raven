@@ -1,0 +1,53 @@
+.buy__sell--content {
+  border: 1px solid #262932;
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--card-color);
+  max-width: 320px;
+  width: 100%;
+}
+
+.buysell__topTabs {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-bg);
+  border-radius: 10px;
+  padding: 0.1rem;
+}
+
+.top__tab {
+  height: 1.95rem;
+  border-radius: 10px;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.top__tab:first-child {
+  border: 2px solid var(--green);
+  background-color: var(--card-color);
+  color: white;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04),
+    0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.mini__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.mini__tab {
+  border-radius: 20px;
+  background-color: var(--soft-gray);
+  color: white;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}

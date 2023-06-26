@@ -1,0 +1,46 @@
+.textInput {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--soft-gray);
+  margin: 1rem 0;
+}
+
+.textInput p {
+  font-size: 0.7rem;
+}
+
+.leftTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 80px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+  height: 2.3rem;
+  padding: 0 0.4rem;
+  text-align: right;
+  background-color: transparent;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.inputDropdownBtn {
+  height: 2.3rem;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}

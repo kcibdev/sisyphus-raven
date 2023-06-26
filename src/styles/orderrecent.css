@@ -139,5 +139,10 @@
   align-items: center;
   gap: 1rem;
   padding: 0.5rem 0;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.orders__lose--gain > h3:first-child,
+.orders__lose--gain > svg {
+  color: var(--green);
 }

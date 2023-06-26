@@ -13,6 +13,7 @@ import Change from "../components/Change";
 import OrderRecent from "../components/orderrecent";
 import DropdownMenu from "../components/Dropdown";
 import SelectMarket from "../components/SelectMarket";
+import BottomSheet from "../components/BottomSheet";
 
 const Index = () => {
   return (
@@ -82,7 +83,9 @@ const Index = () => {
           {/* ORDERS TABS */}
           <div className="orders"></div>
         </div>
-        <div className="buy__sell"></div>
+        <div className="buy__sell">
+          <BottomSheet />
+        </div>
       </main>
     </>
   );

@@ -1,0 +1,28 @@
+.Buttons {
+  height: 32px;
+  padding: 8px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.LeftSection {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.Button {
+  color: white;
+  font-size: 14px;
+  font-family: Satoshi;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+}
