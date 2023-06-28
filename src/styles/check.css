@@ -1,0 +1,31 @@
+.check__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.4rem;
+}
+
+.check__button.checked .check__icon {
+  background-color: var(--blue);
+  border: none;
+}
+
+.check__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.title {
+  font-size: 0.8rem;
+}
+
+.check__button svg {
+  font-size: 0.75rem;
+}

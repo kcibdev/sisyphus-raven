@@ -10,9 +10,9 @@ const Button = ({ content, color, width }) => {
         width: width ?? "100%",
       }}
     >
-      <div className="LeftSection">
+      
         <div className="Button">{content}</div>
-      </div>
+      
     </button>
   );
 };

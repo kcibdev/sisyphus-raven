@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/textinput.css";
-import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 import DropdownMenu from "./Dropdown";
 
 const InputDropdown = () => {
@@ -14,7 +14,7 @@ const InputDropdown = () => {
   return (
     <div className="textInput dropdown">
       <p className="leftTitle">
-        Limit Price <AiOutlineQuestionCircle />
+        Limit Price <AiOutlineInfoCircle />
       </p>
       <div className="inputDropdownBtn">
         <DropdownMenu

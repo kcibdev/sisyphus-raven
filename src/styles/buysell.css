@@ -50,4 +50,78 @@
   color: white;
   padding: 0.2rem 1rem;
   cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.buysell__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.cur__content {
+  width: 13rem;
+}
+
+.select__cur {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.select__cur.selected {
+  background-color: var(--soft-gray);
+}
+
+.select__cur img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.cur__img {
+  position: relative;
+}
+
+.cur__check {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: var(--green);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cur__title {
+  color: white;
+  font-size: 0.95rem;
+}
+.cur__short {
+  font-size: 0.8rem;
+}
+
+.buysell__vl {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vl__topinfo {
+  font-size: 0.8rem;
+}
+
+.vl__value {
+  color: white;
+  font-size: 0.95rem;
 }

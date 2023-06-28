@@ -1,6 +1,6 @@
 .Buttons {
   height: 32px;
-  padding: 8px;
+  padding: 9px 8px;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
@@ -9,13 +9,6 @@
   outline: none;
   border: none;
   cursor: pointer;
-}
-
-.LeftSection {
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  display: flex;
 }
 
 .Button {

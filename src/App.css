@@ -21,6 +21,7 @@
   --soft-gray: #353945;
   --green: #00c076;
   --low-red: #ff6838;
+  --blue: #2764ff;
 }
 
 * {
@@ -221,4 +222,13 @@ main {
 
 .change__amount--percent.high {
   color: var(--green);
+}
+
+/* Line Divider */
+
+.line__divider {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--border-color);
+  margin: 1rem 0;
 }
