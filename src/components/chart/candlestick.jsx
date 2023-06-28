@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { candlestickData } from "../../assets/data/chart";
 
 const CandlestickChart = () => {
-  const container = document.getElementById("chart-container");
+  const container = document.getElementById("chartContainer");
   const chart = createChart(container, {
     width: 600,
     height: 300,
@@ -127,7 +127,7 @@ const CandlestickChart = () => {
     }
   }, 200);
 
-  return <div id="chart-container"></div>;
+  return <div id="chartContainer"></div>;
 };
 
 export default CandlestickChart;

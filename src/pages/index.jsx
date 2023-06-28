@@ -15,6 +15,7 @@ import DropdownMenu from "../components/Dropdown";
 import SelectMarket from "../components/SelectMarket";
 import BottomSheet from "../components/buysell/BottomSheet";
 import OrdersSection from "../components/orders/OrdersSection";
+import CandlestickChart from "../components/chart/candlestick";
 
 const Index = () => {
   return (
@@ -74,7 +75,7 @@ const Index = () => {
             {/* CANDLESTICK CHART */}
             <div className="candlestick__chart">
               <div className="top__time"></div>
-              {/* <CandlestickChart /> */}
+              <CandlestickChart />
             </div>
             {/* RECENT TRADES & ORDER BOOK */}
             <div className="trading__pairs">
