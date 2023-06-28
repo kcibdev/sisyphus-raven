@@ -13,7 +13,7 @@ import Change from "../components/Change";
 import OrderRecent from "../components/orderrecent";
 import DropdownMenu from "../components/Dropdown";
 import SelectMarket from "../components/SelectMarket";
-import BottomSheet from "../components/BottomSheet";
+import BottomSheet from "../components/buysell/BottomSheet";
 import OrdersSection from "../components/orders/OrdersSection";
 
 const Index = () => {

@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import "../styles/buysell.css";
-import TextInput from "./TextInput";
-import InputDropdown from "./InputDropdown";
-import Button from "./Button";
-import CheckButton from "./RadioInput";
-import EURIcon from "../assets/images/eur_currency.png";
-import USDIcon from "../assets/images/usd_currency.png";
-import NGNIcon from "../assets/images/naira_currency.png";
-import GBPIcon from "../assets/images/british_currency.png";
-import DropdownMenu from "./Dropdown";
+import "../../styles/buysell.css";
+import Button from "../Button";
+import EURIcon from "../../assets/images/eur_currency.png";
+import USDIcon from "../../assets/images/usd_currency.png";
+import NGNIcon from "../../assets/images/naira_currency.png";
+import GBPIcon from "../../assets/images/british_currency.png";
+import DropdownMenu from "../Dropdown";
 import { RxCaretDown } from "react-icons/rx";
-import { AiOutlineCheck } from "react-icons/ai";
 import { BiCheck } from "react-icons/bi";
+import Limit from "./Limit";
+import Market from "./Market";
+import Stop from "./Stop";
 
 const BottomSheet = () => {
   const [selectedCur, setSelectedCur] = useState("NGN");
+  const [selectedTab, setSelectedTab] = useState("limit");
   const selectCurrency = [
     {
       icon: GBPIcon,
@@ -45,17 +45,33 @@ const BottomSheet = () => {
         <div className="top__tab">Sell</div>
       </div>
       <div className="mini__tabs">
-        <div className="mini__tab">Limit</div>
-        <div className="mini__tab">Market</div>
-        <div className="mini__tab">Stop-Limit</div>
+        <div
+          className={`mini__tab ${
+            selectedTab === "limit" ? "selectedTab" : ""
+          }`}
+          onClick={() => setSelectedTab("limit")}
+        >
+          Limit
+        </div>
+        <div
+          className={`mini__tab ${
+            selectedTab === "market" ? "selectedTab" : ""
+          }`}
+          onClick={() => setSelectedTab("market")}
+        >
+          Market
+        </div>
+        <div
+          className={`mini__tab ${selectedTab === "stop" ? "selectedTab" : ""}`}
+          onClick={() => setSelectedTab("stop")}
+        >
+          Stop-Limit
+        </div>
       </div>
       <div className="bsht__inputs">
-        <TextInput />
-        <TextInput />
-        <InputDropdown />
-        <div className="">
-          <CheckButton title={"Post"} />
-        </div>
+        {selectedTab === "limit" && <Limit />}
+        {selectedTab === "market" && <Market />}
+        {selectedTab === "stop" && <Stop />}
         <div className="buysell__total">
           <p>Total</p>
           <p>0.00</p>

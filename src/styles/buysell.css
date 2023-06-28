@@ -46,11 +46,15 @@
 
 .mini__tab {
   border-radius: 20px;
-  background-color: var(--soft-gray);
+  background-color: transparent;
   color: white;
   padding: 0.2rem 1rem;
   cursor: pointer;
   font-size: 0.85rem;
+}
+
+.mini__tab.selectedTab {
+  background-color: var(--soft-gray);
 }
 
 .buysell__total {

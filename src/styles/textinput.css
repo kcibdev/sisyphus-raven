@@ -35,12 +35,14 @@ input {
   font-size: 0.7rem;
 }
 
+.dropdown {
+  justify-content: space-between;
+}
+
 .inputDropdownBtn {
   height: 2.3rem;
   font-size: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  flex: 1;
 }
